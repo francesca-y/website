@@ -1,0 +1,83 @@
+body { /*bg*/
+    background-image: url("img/bg2.png"); /*need folder name and 
+    slash before file name*/
+    background-repeat: no-repeat;
+    background-size: cover; /*makes image as big as possible*/
+    background-attachment: fixed; /*image stays the same even if u scroll*/
+    font-family: "Tahoma";
+  }
+  
+  header {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  h1 {
+    color: rgb(0,0,0);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 60px;
+    text-shadow: 2px 2px #14A697;
+  }
+  
+  nav {
+    text-align: center;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  nav li {
+    display: inline-block;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  ul li a {
+    display: flex;
+    justify-content: center;
+    color: #000;
+    padding: 5px 20px;
+    text-decoration: none;
+  }
+
+  ul li a:hover {
+    color: #F25774;
+  }
+
+  p {
+    font-size: 20px;
+    overflow: auto;
+    text-align: left;
+    padding: 10px;
+  }
+
+  div { /*makes header have fill!!*/
+    background-color: #F2EBC4;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 20px;
+  }
+
+  aside {
+    padding: 10px;
+    padding-top: 20px;
+  }
+
+  img {
+    float: right; /*lets text wrap around image*/
+    padding: 5px;
+    padding-top: 0px;
+    border-radius: 13px;
+  }
+
+  .container {
+    display: flex;
+  }
