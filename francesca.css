@@ -1,89 +1,128 @@
-body { /*bg*/
-    background-image: url("img/bg2.png"); /*need folder name and 
-    slash before file name*/
-    background-repeat: no-repeat;
-    background-size: cover; /*makes image as big as possible*/
-    background-attachment: fixed; /*image stays the same even if u scroll*/
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto; 
-    font-weight: 400;
-    font-style: normal;
-  }
+/* --- Global Body Styles --- */
+body {
+  /* Background Image Setup */
+  background-image: url("img/bg2.png"); /* Path to background image */
+  background-repeat: no-repeat;        /* Prevents the image from tiling */
+  background-size: cover;              /* Scales image to cover the entire screen */
+  background-attachment: fixed;        /* Keeps background static while scrolling */
   
-  header {
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
+  /* Global Typography */
+  font-family: "Montserrat", sans-serif; /* Primary font with fallback */
+  font-optical-sizing: auto;             /* Optimizes font rendering based on size */
+  font-weight: 400;                      /* Normal font weight */
+  font-style: normal;                    /* Normal font style */
+}
 
-  h1 {
-    color: rgb(0,0,0);
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 60px;
-    text-shadow: 2px 2px #14A697;
-    font-family: "Emblema One";
-    font-optical-sizing: auto;
-    font-style: normal;
-  }
+/* --- Header Layout --- */
+header {
+  text-align: center;      /* Centers header content horizontally */
+  padding-top: 10px;       /* Top spacing inside header */
+  padding-bottom: 10px;    /* Bottom spacing inside header */
+}
+
+/* --- Main Heading --- */
+h1 {
+  color: rgb(0,0,0);       /* Black text color */
+  text-align: center;      /* Centers heading text */
+  padding-top: 20px;       /* Top inner spacing */
+  padding-bottom: 20px;    /* Bottom inner spacing */
+  font-size: 60px;         /* Large prominent text size */
+  text-shadow: 2px 2px #14A697; /* Teal drop shadow effect */
   
-  nav {
-    text-align: center;
-    font-size: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
+  /* Heading Typography */
+  font-family: "Emblema One";  /* Decorative font family */
+  font-optical-sizing: auto;   /* Optimizes rendering for size */
+  font-style: normal;          /* Normal font style */
+}
 
-  nav li {
-    display: inline-block;
-  }
-  
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
+/* --- Navigation Container --- */
+nav {
+  text-align: center;      /* Centers navigation items */
+  font-size: 20px;         /* Sets navigation text size */
+  padding-top: 10px;       /* Top inner spacing */
+  padding-bottom: 10px;    /* Bottom inner spacing */
+}
 
-  ul li a {
-    display: flex;
-    justify-content: center;
-    color: #000;
-    padding: 5px 20px;
-    text-decoration: none;
-  }
+/* --- Navigation List Items --- */
+nav li {
+  display: inline-block;   /* Places list items side-by-side horizontally */
+}
 
-  ul li a:hover {
-    color: #F25774;
-  }
+/* --- Unordered Lists (Navigation Bar) --- */
+ul {
+  list-style-type: none;   /* Removes default bullet points */
+  margin: 0;               /* Removes default browser margins */
+  padding: 0;              /* Removes default browser padding */
+  overflow: hidden;        /* Keeps floating child elements contained */
+}
 
-  p {
-    font-size: 20px;
-    overflow: auto;
-    text-align: left;
-    padding: 10px;
-  }
+/* --- Navigation Links --- */
+ul li a {
+  display: flex;           /* Enables flexbox layout for alignment */
+  justify-content: center; /* Centers link content horizontally */
+  color: #000;             /* Black text color */
+  padding: 5px 20px;       /* Spacing around link clickable area */
+  text-decoration: none;   /* Removes the default underline */
+}
 
-  div { /*makes header have fill!!*/
-    background-color: #F2EBC4;
-    margin-left: 50px;
-    margin-right: 50px;
-    border-radius: 20px;
-  }
+/* --- Navigation Links (Hover State) --- */
+ul li a:hover {
+  color: #F25774;          /* Changes text to pink when hovered */
+}
 
-  aside {
-    padding: 10px;
-    padding-top: 20px;
-  }
+/* --- Paragraphs --- */
+p {
+  font-size: 20px;         /* Readable text size */
+  overflow: auto;          /* Adds scrollbars automatically if text overflows */
+  text-align: left;        /* Aligns text to the left */
+  padding: 10px;           /* Spacing around the paragraph text */
+  margin-top: 0;           /* Add this to remove the default top gap */
+}
 
-  img {
-    float: right; /*lets text wrap around image*/
-    padding: 5px;
-    padding-top: 0px;
-    border-radius: 13px;
-  }
+/* --- Generic Div Container --- */
+div {
+  background-color: #F2EBC4; /* Cream background color */
+  margin-left: 50px;       /* Spacing on the left outer edge */
+  margin-right: 50px;      /* Spacing on the right outer edge */
+  border-radius: 20px;     /* Rounds the corners of the container */
+}
 
-  .container {
-    display: flex;
-  }
+/* --- Aside Sidebar Content --- */
+aside {
+  padding: 10px;           /* General inner spacing */
+  padding-top: 20px;       /* Extra spacing at the top */
+}
+
+/* --- Content Images --- */
+img {
+  float: right;            /* Aligns image to the right so text wraps around it */
+  padding: 5px;            /* General spacing around the image */
+  padding-top: 0px;        /* Removes top padding to align with text */
+  border-radius: 13px;     /* Smoothly rounds the image corners */
+}
+
+/* --- Main Layout Container --- */
+.container {
+  display: flex;           /* Enables flexbox for child item layout */
+  position: relative;      /* Positions container relative to its normal slot */
+  top: 10px;               /* Nudges the container 10px down from the top */
+  height: 500px;           /* Fixes the total height of the container */
+}
+
+/* --- Blue Border Decorative Box --- */
+.blue_border {
+  width: 100%;             /* Fills the full width of the parent */
+  height: 90%;             /* Fills 90% height of the parent */
+  align-self: center;      /* Centers this specific item vertically in flexbox */
+  outline-style: solid;    /* Applies a solid outline style */
+  outline-color: #14A697;  /* Teal outline color */
+  margin: 30px;            /* External spacing around the outline box */
+}
+
+.side_desc {
+  height: 90%;
+  align-self: center;
+  width: 50%;
+  margin-left: 0px;
+  margin-right: 30px;
+}
