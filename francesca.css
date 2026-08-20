@@ -85,7 +85,7 @@ div {
   background-color: #F2EBC4; /* Cream background color */
   margin: auto;
   border-radius: 20px;     /* Rounds the corners of the container */
-  height: 50%;
+  min-height: 50%;
   width: 86%;
 }
 
@@ -113,14 +113,21 @@ img {
 /* --- Blue Border Decorative Box --- */
 .blue_border {
   width: 100%;             /* Fills the full width of the parent */
-  height: 90%;             /* Fills 90% height of the parent */
+  min-height: 90%;             /* Fills 90% height of the parent */
   align-self: center;      /* Centers this specific item vertically in flexbox */
   outline-style: solid;    /* Applies a solid outline style */
   outline-color: #14A697;  /* Teal outline color */
   margin: 30px;            /* External spacing around the outline box */
   display: flex;
+  flex-direction: column; /* stacks everything vertically within this class*/
   justify-content: center;
   align-items: center;
+  overflow-y: scroll;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.blue_border::-webkit-scrollbar {
+  display: none;
 }
 
 .side_desc {
@@ -130,11 +137,31 @@ img {
   margin-left: 0px;
   margin-right: 30px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start; /* doesn't cut off the top */
   align-items: center;
+  overflow-y: scroll;
+}
+
+.side_desc::-webkit-scrollbar {
+  display: none;
+}
+
+.cover {
+  height: 100px;
+  width: 100px;
 }
 
 .header_div {
   width: 75%;
   margin: auto;
+}
+
+.music_list {
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  list-style-type: disc; /* brings back bullet points */
+  padding-left: 20px; /* adds space so that the bullet points are visible */
+  margin-top: 2px;
 }
