@@ -97,7 +97,6 @@ aside {
 
 /* --- Content Images --- */
 img {
-  float: right;            /* Aligns image to the right so text wraps around it */
   padding: 5px;            /* General spacing around the image */
   padding-top: 0px;        /* Removes top padding to align with text */
   border-radius: 13px;     /* Smoothly rounds the image corners */
@@ -119,6 +118,9 @@ img {
   outline-style: solid;    /* Applies a solid outline style */
   outline-color: #14A697;  /* Teal outline color */
   margin: 30px;            /* External spacing around the outline box */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .side_desc {
@@ -127,6 +129,9 @@ img {
   width: 50%;
   margin-left: 0px;
   margin-right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header_div {
